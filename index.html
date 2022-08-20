@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eastern Bank Ltd.</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="text-5xl font-medium text-white bg-slate-800 mx-auto
+                text-center p-8">Swiss
+                Bank Ltd.</h1>
+        </header>
+        <section class="bg-slate-100">
+            <marquee class="bg-red-200 text-red-600 py-2 mt-3">It has been more
+                than 90 days
+                since you
+                updated your Swissbanking password. To ensure
+                security, please change the password immediately.
+            </marquee>
+        </section>
+        <main class="drop-shadow-md bg-slate-100 h-5/6">
+            <!-- balance and transcation summary -->
+            <section class="mx-auto pt-12">
+                <div class="grid grid-cols-3 gap-4 mx-auto w-3/4">
+                    <div class="bg-violet-600 p-8 text-white rounded-xl
+                        drop-shadow-md">
+                        <h4 class="text-2xl font-medium
+                            mb-1">Deposit</h4>
+                        <h2 class="text-4xl font-medium">$<span
+                                id="deposit-total">0</span></h2>
+                    </div>
+                    <div class="bg-rose-600 p-8 text-white rounded-xl
+                        drop-shadow-md">
+                        <h4 class="text-2xl font-medium mb-1">Withdraw</h4>
+                        <h2 class="text-4xl font-medium">$<span
+                                id="withdraw-total">0</span></h2>
+                    </div>
+                    <div class="bg-teal-600 p-8 text-white rounded-xl
+                        drop-shadow-md">
+                        <h4 class="text-2xl font-medium mb-1">Balance</h4>
+                        <h2 class="text-4xl font-medium">$<span
+                                id="balance-total">0</span></h2>
+                    </div>
+                </div>
+            </section>
+            <!-- deposit and withdraw section -->
+            <section class="mx-auto w-3/4">
+                <div class="grid grid-cols-2 gap-4 mt-12">
+                    <!-- make deposit -->
+                    <div class="bg-indigo-600 p-8 rounded-xl drop-shadow-md">
+                        <h3 class="text-3xl text-white mb-3 font-normal">Make
+                            Deposit</h3>
+                        <input id="deposit-field" class="text-black block w-3/4
+                            px-4 py-1 rounded
+                            mb-2 w-full"
+                            type="text"
+                            placeholder="$ Amount you want to deposit">
+                        <button id="btn-deposit" class=" bg-slate-100 px-5
+                            py-2 rounded mt-2 font-medium text-lg
+                            text-indigo-600">Deposit</button>
+                    </div>
+                    <!-- make withdraw -->
+                    <div class="bg-pink-600 p-8 rounded-xl drop-shadow-md">
+                        <h3 class="text-3xl text-white mb-3 font-normal">Make
+                            Withdraw</h3>
+                        <input id="withdraw-field" class="text-black block w-3/4
+                            px-4 py-1 rounded
+                            mb-2 w-full"
+                            type="text"
+                            placeholder="$ Amount you want to deposit">
+                        <button id="btn-withdraw" class=" bg-slate-100 px-5
+                            py-2 rounded mt-2 font-medium text-lg
+                            text-pink-600">Withdraw</button>
+                    </div>
+                </div>
+            </section>
+            <footer class="text-center mx-auto pt-12 text-base mt-12 pb-5">
+                <p class="text-lg">Copyright © 2022 <a
+                        href="https://farhads-creation.com/" target="_blank">Swiss
+                        Bank</a></p>
+            </footer>
+        </main>
+        <script src="js/utilities.js"></script>
+        <script src="js/deposit.js"></script>
+        <script src="js/withdraw.js"></script>
+    </body>
+</html>
